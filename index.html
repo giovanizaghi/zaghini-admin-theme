@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/jquery-ui.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/jquery-ui.theme.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/sweetalert2.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/site.css"/>
+
+        <script src="Scripts/jquery-3.2.1.min.js"></script>
+        <script src="Scripts/jquery-ui.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>        
+        <script src="Scripts/sweetalert2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+        <script src="Scripts/menus.js"></script>
+        <script src="Scripts/echarts.min.js"></script>        
+        <script src="Scripts/VisitsChart.js"></script>        
+        <script src="Scripts/OSChart.js"></script>    
+    </head>
+    <body>
+        <div class="nav-top">
+            <div class="col-md-12">
+                <div class="col-md-6 logo text-left">ZAGHINI</div>
+                <div class="col-md-6 top-menu text-right">
+                    <img class="top-picture" src="Images/Alicia.jpg"/>
+                    Alicia
+                    <i class="fa fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="nav-left">
+            <img src="Images/Alicia.jpg"/>
+            <span>Alicia Vikander</span>
+            <label>General</label>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleSubmenu(this)">
+                        <i class="fa fa-dashboard fa-fw"></i> Dashboard
+                    </a>
+                    <ul class="submenu">
+                            <li><a>Sub 1</a></li>
+                            <li><a>Sub 2</a></li>
+                            <li><a>Sub 3</a></li>
+                    </ul>
+                </li>
+                
+
+                <li><a href="#"><i class="fa fa-edit fa-fw"></i> Forms</a></li>
+                <li><a href="#"><i class="fa fa-table fa-fw"></i> Tables</a></li>
+                <li><a href="#"><i class="fa fa-clone fa-fw"></i> Layouts</a></li>
+            </ul>  
+            <label>Explore</label> 
+            <ul>
+                <li><a href="#"><i class="fa fa-dashboard fa-fw"></i> Extras</a></li>
+                <li><a href="#"><i class="fa fa-laptop fa-fw"></i> Menus</a></li>       
+            </ul>  
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-7">
+                        <div class="z_panel">
+                            <div class="z_panel-title">
+                                <h4>Visits chart</h4>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="z_panel-content">
+                                <div id="main" style="width: 600px;height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="z_panel">
+                            <div class="z_panel-title">
+                                <h4>Operational System Visits</h4>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="z_panel-content">
+                                    <div id="os" style="width: 350px;height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <div class="z_panel">
+                            <div class="z_panel-title">
+                                <h4>Top 5 posts</h4>                                    
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="z_panel-content">
+                                <table class="table table-striped table-hover" style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td>New Tomb Raider Movie will be...</td>
+                                        <td><a href="#"><i class="fa fa-edit fa-fw" title="Edit this post"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-eye fa-fw" title="View this post"></i></a></td>
+                                        <td>5670 <small>views</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tomb Raider Underworld free...</td>
+                                        <td><a href="#"><i class="fa fa-edit fa-fw" title="Edit this post"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-eye fa-fw" title="View this post"></i></a></td>
+                                        <td>9450 <small>views</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xbox One X in Rise of The Tomb...</td>
+                                        <td><a href="#"><i class="fa fa-edit fa-fw" title="Edit this post"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-eye fa-fw" title="View this post"></i></a></td>
+                                        <td>5200 <small>views</small></td>
+                                     </tr>
+                                     <tr>
+                                        <td>New HQ comes to Brazil</td>
+                                        <td><a href="#"><i class="fa fa-edit fa-fw" title="Edit this post"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-eye fa-fw" title="View this post"></i></a></td>
+                                        <td>5200 <small>views</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alicia Vikander in Comic Con</td>
+                                        <td><a href="#"><i class="fa fa-edit fa-fw" title="Edit this post"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-eye fa-fw" title="View this post"></i></a></td>
+                                        <td>5200 <small>views</small></td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                            <div class="z_panel">
+                                    <div class="z_panel-title">
+                                        <h4>Here is a Panel</h4>                                    
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="z_panel-content">
+                                        here is a content
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="z_panel">
+                            <div class="z_panel-title">
+                                    <h4>Here is a Panel</h4>                                    
+                                    <div class="clearfix"></div>
+                            </div>
+                            <div class="z_panel-content">
+                                here is a content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
